@@ -1,0 +1,6 @@
+usr/local/bin/drc-qt usr/bin
+share/pixmaps/drc32.xpm usr/share/pixmaps
+share/pixmaps/drc16.xpm usr/share/pixmaps
+share/pixmaps/drc128.png usr/share/pixmaps
+debian/drc-qt.desktop usr/share/applications
+debian/drc-qt.protocol usr/share/kde4/services/

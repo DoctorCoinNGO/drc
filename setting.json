@@ -1,0 +1,109 @@
+{
+  "title": "IQUIDUS",
+
+  "address": "0.0.0.0:3001",
+
+  "coin": "Darkcoin",
+
+  "symbol": "DRK",
+
+  "logo": "/images/logo.png",
+
+  "favicon": "public/favicon.ico",
+
+  "theme": "Cyborg",
+
+  "port" : 3001,
+
+  "dbsettings": {
+    "user": "iquidus",
+    "password": "3xp!0reR",
+    "database": "explorerdb",
+    "address": "localhost",
+    "port": 27017
+  },
+
+  "update_timeout": 10,
+  "check_timeout": 250,
+
+  "wallet": {
+    "host": "localhost",
+    "port": 10211,
+    "user": "gincoinrpc123",
+    "pass": "123gfjddddadf223CVjHtbRde2s5kzdf233sa"
+  },
+
+  "confirmations": 40,
+
+  "locale": "locale/en.json",
+
+  "display": {
+    "api": true,
+    "markets": true,
+    "richlist": true,
+    "twitter": true,
+    "facebook": false,
+    "googleplus": false,
+    "youtube": false,
+    "search": true,
+    "movement": true,
+    "network": true
+  },
+
+  "index": {
+    "show_hashrate": true,
+    "difficulty": "POW",
+    "last_txs": 100
+  },
+
+
+  "api": {
+    "blockindex": 100,
+    "blockhash": "000001d9726a3d9624b6bd53428b658204333461708f84a520570272c5d7f511",
+    "txhash": "584aff90e44e44dbc441dbf64671fc47ccf3be80ea9575c95d398ed448f42df8",
+    "address": "GYmFcmN2y9L8nTcMkMR9qVUqVeXV3GXmHh"
+  },
+
+  "markets": {
+    "coin": "JBS",
+    "exchange": "BTC",
+    "enabled": ["bittrex"],
+    "cryptopia_id": "1658",
+    "ccex_key" : "Get-Your-Own-Key",
+    "default": "bittrex"
+  },
+
+  "richlist": {
+    "distribution": true,
+    "received": true,
+    "balance": true
+  },
+  "movement": {
+    "min_amount": 100,
+    "low_flag": 1000,
+    "high_flag": 5000
+  },
+
+  "twitter": "iquidus",
+  "facebook": "yourfacebookpage",
+  "googleplus": "yourgooglepluspage",
+  "youtube": "youryoutubechannel",
+
+  "genesis_tx": "5ef7d66548446d1e71190ff06358b1f63169434e8820af738b32ada4a91f1fe2",
+  "genesis_block": "000004cbbb0674b94bf78ad6649c6116addc1bb7eb27ed9fbbab27020101bca9",
+
+  "heavy": false,
+
+  "txcount": 100,
+
+  "show_sent_received": true,
+
+  "supply": "COINBASE",
+
+  "nethash": "getnetworkhashps",
+
+  "nethash_units": "G",
+
+  "labels": {
+  }
+}
