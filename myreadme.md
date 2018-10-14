@@ -345,25 +345,25 @@ static const int RecommendedNumConfirmations = 6;
 
 ```java
 // src/masternode-payments.cpp line 288
-    CBitcoinAddress VfundAddress("DDxb8wqPazyG7y6kKThSMxeB5DPSRpagzf");
+    CBitcoinAddress VfundAddress("DMYZMjSxCfHw4xHjETRps9A2b1wBcDEWqW");
     CBitcoinAddress VfundAddress_fork("HSmv2N2DEkyjrHzqjH459qWLfJ9uFahHHM");
 
 // src/masternode-payments.cpp line 588
 
-    CBitcoinAddress VfundAddress2("DDxb8wqPazyG7y6kKThSMxeB5DPSRpagzf");
+    CBitcoinAddress VfundAddress2("DMYZMjSxCfHw4xHjETRps9A2b1wBcDEWqW");
     CBitcoinAddress VfundAddress_forkk("HSmv2N2DEkyjrHzqjH459qWLfJ9uFahHHM");
 //}
 
 // && /src/masternodeman.cpp line 572  
 
-  CBitcoinAddress VfundAddress2("DDxb8wqPazyG7y6kKThSMxeB5DPSRpagzf");
+  CBitcoinAddress VfundAddress2("DMYZMjSxCfHw4xHjETRps9A2b1wBcDEWqW");
   CScript VfundPayee2 = GetScriptForDestination(VfundAddress2.Get());
 
   if (VfundPayee2 == txout.scriptPubKey && nMasternodePayment == txout.nValue) {
       return true;
   }
   //  /src/masternodeman.cpp line 698
-  if ( strPayee != "DDxb8wqPazyG7y6kKThSMxeB5DPSRpagzf"){
+  if ( strPayee != "DMYZMjSxCfHw4xHjETRps9A2b1wBcDEWqW"){
     LogPrintf("Sadness. :(\n");
     return -1;
   }else{
@@ -373,8 +373,8 @@ static const int RecommendedNumConfirmations = 6;
 
 // TODO 修改捐款地址。。。。。。。
 
-// author: DDxb8wqPazyG7y6kKThSMxeB5DPSRpagzf
-// mytest addr:   DDxb8wqPazyG7y6kKThSMxeB5DPSRpagzf
+// author: DMYZMjSxCfHw4xHjETRps9A2b1wBcDEWqW
+// mytest addr:   DMYZMjSxCfHw4xHjETRps9A2b1wBcDEWqW
 
 ```
 
