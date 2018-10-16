@@ -83,7 +83,7 @@ public:
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
         consensus.BIP34Height = 0; // FIX
-        consensus.BIP34Hash = uint256S("00000d0dd1ac95ad93c4adb92611e3bd871c40fda410e5dfc8949c9872b40e8f"); // FIX
+        consensus.BIP34Hash = uint256S("00000b94437e8849a1ab7682091faabbac0a30bcb28852566558955c1cf5829e"); // FIX
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
         consensus.nPowTargetTimespan = 1 * 60; // DRC: every blocks
         consensus.nPowTargetSpacing = 1 * 60; // DRC: 2 minutes
@@ -120,10 +120,10 @@ public:
         nMaxTipAge = 1.5 * 60 * 60; // ~36 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1529878570, 811471, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1529878571, 381207, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert(consensus.hashGenesisBlock == uint256S("00000d0dd1ac95ad93c4adb92611e3bd871c40fda410e5dfc8949c9872b40e8f"));
+        assert(consensus.hashGenesisBlock == uint256S("00000b94437e8849a1ab7682091faabbac0a30bcb28852566558955c1cf5829e"));
         assert(genesis.hashMerkleRoot == uint256S("9dbf61110fc39d1611aeaf575c2f0b73e1ce8837b03ba8db39e1dd1c2d1a9cb0"));
 
         vSeeds.push_back(CDNSSeedData("drcseed1", "seed1.doctorcoin.cc"));
@@ -156,8 +156,8 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("00000d0dd1ac95ad93c4adb92611e3bd871c40fda410e5dfc8949c9872b40e8f")),
-            1529878570, // * UNIX timestamp of last checkpoint block
+            ( 0, uint256S("00000b94437e8849a1ab7682091faabbac0a30bcb28852566558955c1cf5829e")),
+            1529878571, // * UNIX timestamp of last checkpoint block
             0,          // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             500	        // * estimated number of transactions per day after checkpoint
